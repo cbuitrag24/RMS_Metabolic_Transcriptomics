@@ -31,7 +31,7 @@ Manuscript analyses: GSE108022 (64 RMS tumours and 5 normal skeletal-muscle samp
 - `scripts/28_mapear_genes_leading_edges_replicados.R`
 - `scripts/29_auditar_solapamiento_Hallmarks_entre_ejes.R`
 
-Presence is verified; end-to-end execution and scientific outputs are **not yet verified**.
+Presence is verified. **Local investigator-reported verification (2026-11-01):** `scripts/25_leading_edge_Hallmarks_replicados.R` was executed successfully using the original `Hallmark_fgsea_GSE108022_universo_comun_9428.rds`, `Hallmark_fgsea_GSE28511_universo_comun_9428.rds`, and `Hallmark_replicados_GSE108022_GSE28511.csv` in `validacion_GSE28511/`. The console reported 13 concordant Hallmarks, 495 shared Hallmark–gene associations, and 374 unique genes. The script generated `Hallmark_leadingEdge_concordancia_resumen.csv`, `Hallmark_leadingEdge_genes_detalle.csv`, `Hallmark_leadingEdge_genes_compartidos.csv`, `Hallmark_leadingEdge_genes_frecuencia.csv`, and `Hallmark_leadingEdge_concordancia.rds`. The generated files remain local; their contents and the final 16-gene selection have not yet been independently checked. End-to-end execution from raw data remains unverified.
 
 ## Still to locate and verify against the manuscript
 
@@ -55,4 +55,4 @@ Prefer accession-based downloads of public raw data and scripts that regenerate 
 
 ## Next action
 
-Figure 3 reconstruction is now in `scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R` and was validated locally against the published figure. Continue locating/verifying original scripts for remaining manuscript analyses; do not claim end-to-end reproduction from raw data.
+Figure 3 reconstruction is now in `scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R` and was validated locally against the published figure. The original leading-edge concordance script has now run successfully on retained enrichment results. Next priority: document the provenance of the final 16-gene metabolic core and remaining manuscript analyses; do not claim end-to-end reproduction from raw data.
