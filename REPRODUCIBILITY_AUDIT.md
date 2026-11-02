@@ -36,7 +36,7 @@ Presence is verified; end-to-end execution and scientific outputs are **not yet 
 ## Still to locate and verify against the manuscript
 
 - [ ] Exact original code and intermediate inputs producing the final 16-gene list and Figure 2 (check whether existing leading-edge scripts suffice).
-- [ ] PCA of the 16 metabolic genes across 64 RMS tumours (Figure 3; PC1 36.48%, PC2 13.13%).
+- [x] Figure 3: documented PCA reconstruction added as `scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R`. Executed locally by the investigator: 16 genes, 64 RMS tumours, PC1 36.481659%, PC2 13.131902%, all PC1 loadings negative. Reconstructed PDF visually compared with original; this is not the historical script. End-to-end reproduction from raw public data remains unverified.
 - [ ] Spearman analyses for the six myogenic markers and the PC1–CKM association.
 - [ ] Construction of the external differentiation-related score from the cited published gene lists.
 - [ ] Correlations of CKM, metabolic PC1 and the differentiation score (Figure 4).
@@ -55,4 +55,4 @@ Prefer accession-based downloads of public raw data and scripts that regenerate 
 
 ## Next action
 
-Locate the original script(s) used for the **16-gene, 64-tumour metabolic PCA**, then verify inputs, outputs and consistency with the manuscript before adding them. No new statistical analysis should be invented to fill a missing script.
+Figure 3 reconstruction is now in `scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R` and was validated locally against the published figure. Continue locating/verifying original scripts for remaining manuscript analyses; do not claim end-to-end reproduction from raw data.
