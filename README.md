@@ -37,3 +37,9 @@ The workflow requires the original GEO files GSE108022_counts_matrix.txt.gz, GSE
 The scripts currently use relative file paths and are intended to run from a common working directory containing their required inputs.
 
 See the main repository README for the GEO accession and data source.
+
+## Reproducibility status (2026-11-01)
+
+The manuscript's 16-gene metabolic PCA (Figure 3) has been reproduced numerically and visually using a **documented reconstruction**, not the lost historical PCA script. The reconstruction is in [scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R](scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R). The filename is retained for continuity; validation results are recorded in [scripts/README.md](scripts/README.md).
+
+**The entire manuscript is not yet reproducible end-to-end.** Scripts and/or provenance still need verification for the 16-gene selection, myogenic-marker correlations, external differentiation score, Figure 4, Figure 5 regression and sensitivity analyses, and full raw-data-to-results execution. See [REPRODUCIBILITY_AUDIT.md](REPRODUCIBILITY_AUDIT.md) for the tracked inventory. Do not interpret script presence as proof of successful rerunning.
