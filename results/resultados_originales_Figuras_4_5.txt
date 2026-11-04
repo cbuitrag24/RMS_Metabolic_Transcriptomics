@@ -1,0 +1,55 @@
+RESULTADOS ORIGINALES DEL MANUSCRITO RMS
+
+FIGURA 4: CORRELACIONES PC1 Y MARCADORES
+      marcador         rho            p         FDR
+MYOD1    MYOD1 -0.01506410 0.9059533449 0.905953345
+MYOG      MYOG -0.07962454 0.5316850062 0.638022007
+MYH1      MYH1 -0.21923328 0.0817639111 0.163527822
+MYH2      MYH2 -0.18969997 0.1332628541 0.199894281
+MYH3      MYH3 -0.34166667 0.0057247432 0.017174229
+CKM        CKM -0.41341575 0.0006852737 0.004111642
+
+CORRELACIONES INDIVIDUALES GENES METABOLICOS - CKM
+     gene         rho            p          FDR
+1   ETFDH  0.25325092 4.347454e-02 8.694907e-02
+2   HADHB  0.18228022 1.494125e-01 2.173273e-01
+3    ACO2  0.50805861 1.822312e-05 9.718995e-05
+4    ECH1  0.53946886 4.229833e-06 6.767733e-05
+5    PDHB  0.39418498 1.269007e-03 4.107318e-03
+6     DLD  0.06675824 6.001914e-01 7.386972e-01
+7    MDH1  0.34285714 5.547396e-03 1.479306e-02
+8    DLST  0.03901099 7.595640e-01 8.102016e-01
+9    SDHD  0.39381868 1.283537e-03 4.107318e-03
+10 SUCLG1  0.26689560 3.301340e-02 7.545921e-02
+11     FH  0.16158425 2.020977e-01 2.694636e-01
+12  PDHA1  0.52284799 9.328736e-06 7.462989e-05
+13   MDH2  0.19116300 1.302402e-01 2.083844e-01
+14 RETSAT -0.05746337 6.519755e-01 7.451149e-01
+15  DECR1 -0.02838828 8.237885e-01 8.237885e-01
+16  ACAA1  0.19139194 1.297720e-01 2.083844e-01
+
+FIGURA 5: MODELO AJUSTADO
+
+Call:
+lm(formula = PC1 ~ CKM + diferenciacion + fusion, data = data.frame(PC1 = pca_metabolico$x[, 
+    1], CKM = as.numeric(expresion_rms_22["CKM", ]), diferenciacion = as.numeric(score_diferenciacion), 
+    fusion = factor(fusion_rms)))
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.1377 -0.9969  0.0633  1.1702  3.6402 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       1.78178    0.60649   2.938 0.004735 ** 
+CKM              -0.38654    0.10067  -3.840 0.000307 ***
+diferenciacion    0.38814    0.47332   0.820 0.415550    
+fusionPAX3-FOXO1  0.65928    0.75034   0.879 0.383224    
+fusionPAX3-NCOA1  0.84803    2.22970   0.380 0.705087    
+fusionPAX7-FOXO1  0.09351    0.97160   0.096 0.923658    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.19 on 58 degrees of freedom
+Multiple R-squared:  0.2436,	Adjusted R-squared:  0.1784 
+F-statistic: 3.735 on 5 and 58 DF,  p-value: 0.005332
