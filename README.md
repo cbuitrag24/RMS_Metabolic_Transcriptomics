@@ -42,4 +42,14 @@ See the main repository README for the GEO accession and data source.
 
 The manuscript's 16-gene metabolic PCA (Figure 3) has been reproduced numerically and visually using a **documented reconstruction**, not the lost historical PCA script. The reconstruction is in [scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R](scripts/42_reconstruccion_PCA_metabolica_RMS_PENDIENTE_VALIDACION.R). The filename is retained for continuity; validation results are recorded in [scripts/README.md](scripts/README.md).
 
-**The entire manuscript is not yet reproducible end-to-end.** Scripts and/or provenance still need verification for the 16-gene selection, myogenic-marker correlations, external differentiation score, Figure 4, Figure 5 regression and sensitivity analyses, and full raw-data-to-results execution. See [REPRODUCIBILITY_AUDIT.md](REPRODUCIBILITY_AUDIT.md) for the tracked inventory. Do not interpret script presence as proof of successful rerunning.
+**The entire manuscript is not yet reproducible end-to-end.** The 16-gene selection is now traceable to `data/Hallmark_leadingEdge_genes_compartidos.csv` and `scripts/43_verificar_seleccion_16_genes_metabolicos.R` (comparison with Table 2 verified; clean-environment execution not yet established). Scripts and/or provenance still need verification for myogenic-marker correlations, external differentiation score, Figure 4, Figure 5 regression and sensitivity analyses, and full raw-data-to-results execution. See [REPRODUCIBILITY_AUDIT.md](REPRODUCIBILITY_AUDIT.md) for the tracked inventory. Do not interpret script presence as proof of successful rerunning.
+
+## Reproducing the 16-gene metabolic selection
+
+From the repository root, with R installed, run:
+
+```sh
+Rscript scripts/43_verificar_seleccion_16_genes_metabolicos.R
+```
+
+Input: `data/Hallmark_leadingEdge_genes_compartidos.csv`, a derived output of script 25 based on the two original GEO enrichment analyses. Output: `seleccion_16_genes_metabolicos_verificada.csv` in the current working directory. The script compares the pathway intersection to the manuscript's Table 2 list and stops if they differ. The source CSV and the resulting 16-gene intersection have been inspected; no claim is made that the entire pipeline has been rerun in a clean environment.
