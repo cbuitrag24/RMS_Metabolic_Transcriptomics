@@ -7,10 +7,10 @@
 #
 # Entrada: Hallmark_leadingEdge_genes_compartidos.csv
 # Generado por: 25_leading_edge_Hallmarks_replicados.R
-# Ejecutar desde el directorio que contiene el CSV.
+# Ejecutar desde la raiz del repositorio (Rscript scripts/43_...).
 # ============================================================
 
-entrada <- "Hallmark_leadingEdge_genes_compartidos.csv"
+entrada <- file.path("data", "Hallmark_leadingEdge_genes_compartidos.csv")
 if (!file.exists(entrada)) stop("No se encontro el CSV de entrada: ", entrada)
 
 datos <- read.csv(entrada, stringsAsFactors = FALSE, check.names = FALSE)
