@@ -1,4 +1,39 @@
-# Analysis scripts
+# RMS metabolic transcriptomics
+
+Research repository accompanying a manuscript on concordant metabolic transcriptomic alterations in rhabdomyosarcoma (RMS) compared with normal skeletal muscle.
+
+The study analyses two public GEO datasets: [GSE108022](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108022) (RNA sequencing; 64 RMS and 5 normal skeletal-muscle samples in the primary analysis) and [GSE28511](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28511) (microarray; 18 RMS and 3 normal samples). It reports 13 concordantly enriched Hallmark gene sets, a shared set of 16 metabolic genes, and associations of a metabolic principal component with myogenic markers and CKM.
+
+## Manuscript tables
+
+These are Markdown transcriptions of the investigator-supplied manuscript tables; they do not replace the formatted submission documents.
+
+- [Table 1 — Dataset characteristics](tables/Table_1_Dataset_Characteristics.md)
+- [Table 2 — Sixteen metabolic genes](tables/Table_2_Metabolic_Genes.md)
+- [Table 3 — Adjusted models](tables/Table_3_Adjusted_Models.md)
+- [Supplementary Table S1 — Concordant Hallmark gene sets](tables/Supplementary_Table_S1_Hallmark.md)
+
+The manuscript has **three main tables and one supplementary table (S1)**.
+
+## Code, archived results and figures
+
+- [R analysis scripts](scripts/) — original scripts and documented reconstruction scripts.
+- [Shared Hallmark leading-edge associations](data/Hallmark_leadingEdge_genes_compartidos.csv) — derived input for the documented 16-gene selection.
+- [Original Figure 4–5 statistical output](results/resultados_originales_Figuras_4_5.txt).
+- [Compact original Figure 4–5 R objects](results/RMS_Figuras_4_5_objetos_originales.RData).
+- [Figure 4 plotting script](scripts/46_generar_Figura_4_desde_objetos_originales.R) and [Figure 5 plotting script](scripts/47_generar_Figura_5_desde_modelo_original.R).
+- [Figure 4–5 source and plotting guide](docs/FIGURAS_4_5_REPRODUCIBILIDAD.md).
+- [Execution and dependencies guide](docs/GUIA_EJECUCION_Y_DEPENDENCIAS.md).
+- [Table source-file guide](docs/TABLAS_MANUSCRITO_GUIA_ARCHIVOS.md).
+- [Detailed reproducibility inventory](REPRODUCIBILITY_AUDIT.md).
+
+## Reproducibility boundaries
+
+This repository preserves code, derived data and original statistical objects, but **does not yet demonstrate complete end-to-end reproduction from the public GEO inputs**. In particular, the newly committed Figure 4 and 5 plotting scripts have not been executed and compared with the original figure PDFs. Do not treat the presence of a script as evidence that its output has been validated.
+
+---
+
+## Historical RNA-seq workflow notes (preserved)
 
 This directory contains R scripts supporting the differential expression analysis of GSE108022.
 
