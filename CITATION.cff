@@ -9,3 +9,5 @@ authors:
     given-names: "Ana Paula"
 repository-code: "https://github.com/cbuitrag24/RMS_Metabolic_Transcriptomics"
 url: "https://github.com/cbuitrag24/RMS_Metabolic_Transcriptomics"
+doi: "10.5281/zenodo.24012820"
+version: "0.1.0"
