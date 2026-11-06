@@ -1,5 +1,9 @@
 # RMS metabolic transcriptomics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24012820.svg)](https://doi.org/10.5281/zenodo.24012820)
+
+**Zenodo DOI:** [10.5281/zenodo.24012820](https://doi.org/10.5281/zenodo.24012820) — associated with the first archived GitHub release, [v0.1.0](https://github.com/cbuitrag24/RMS_Metabolic_Transcriptomics/releases/tag/v0.1.0). Subsequent changes on `main` are not automatically included in that archived release.
+
 Research repository accompanying a manuscript on concordant metabolic transcriptomic alterations in rhabdomyosarcoma (RMS) compared with normal skeletal muscle.
 
 The study analyses two public GEO datasets: [GSE108022](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108022) (RNA sequencing; 64 RMS and 5 normal skeletal-muscle samples in the primary analysis) and [GSE28511](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE28511) (microarray; 18 RMS and 3 normal samples). It reports 13 concordantly enriched Hallmark gene sets, a shared set of 16 metabolic genes, and associations of a metabolic principal component with myogenic markers and CKM.
