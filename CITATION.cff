@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use the code or research materials in this repository, please cite this repository. Citation details for the associated manuscript will be added when available."
+type: software
+title: "RMS Metabolic Transcriptomics"
+authors:
+  - family-names: "Buitrago"
+    given-names: "Claudia"
+  - family-names: "Irazoqui"
+    given-names: "Ana Paula"
+repository-code: "https://github.com/cbuitrag24/RMS_Metabolic_Transcriptomics"
+url: "https://github.com/cbuitrag24/RMS_Metabolic_Transcriptomics"
